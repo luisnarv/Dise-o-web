@@ -135,3 +135,74 @@ footer{
 }
 
 /*---------------- section3* ---------------------*/
+
+
+/*----- IPAD --------*/
+@media  (max-width: 768px) {
+    #contenedor{
+        flex-direction: column;
+    }
+    #contenedor aside{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .articulo{
+        width: 47%;     
+    }
+    nav, footer {
+        max-width: 95%;
+    }
+    nav li.menu{
+        padding-bottom: 25px;
+    }
+}
+
+
+
+
+/*----------- Movil -------------*/
+
+@media  (max-width: 375px) {
+    ul{
+        max-width: 95%;
+        flex-wrap: wrap-reverse;
+        display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    }
+    .logo{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+   
+.enviar-derecha{
+    width: 100%;
+}
+
+    nav li.menu{
+        margin-left: 24px;
+        width: auto;
+        height: 0px;
+    }
+    .image{
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    footer{
+        padding-bottom: 0px;
+        flex-direction: column;
+        text-align:center;
+        padding-bottom: 10px;
+    }
+    #contenedor aside{
+       display: none;
+    }
+
+}
+
+
